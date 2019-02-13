@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './components/Header';
+import SplashPage from './components/SplashPage'
 import { gems, metals } from './dataset/evermoreGems';
 import './App.css';
 
@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <SplashPage />
       </div>
     );
   }
