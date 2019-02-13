@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import GemCard from './GemCard'
 import { gems, metals } from '../dataset/evermoreGems';
 
 
@@ -12,14 +13,11 @@ class GemsPage extends Component {
         };
       }
 
-      mapGems(() => {
-        const displayGems = gems.map(gem =>{
-            return gem.name;
-        });
-      });
+
 
     render() {
-        const GemPageDisplay = this.state.GemPage ? { display: 'none' } : {};
+      const GemPageDisplay = this.state.GemPage ? { display: 'none' } : {};
+
 
     return (
       <div style={GemPageDisplay}>
@@ -43,6 +41,9 @@ class GemsPage extends Component {
           </select>
         </div>
         <div className="result">
+        {gems.map((gem) => {
+          return <GemCard key={gem.id} allGems={gem.Name}/> 
+        })}
         
 
         </div>
