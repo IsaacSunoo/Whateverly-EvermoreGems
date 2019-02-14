@@ -1,31 +1,36 @@
 import React, { Component } from 'react';
-import GemCard from './GemCard'
-import { gems, metals } from '../dataset/evermoreGems';
 
+import GemCard from './GemCard';
 
 class GemsPage extends Component {
     constructor() {
         super();
         this.state = {
-          GemPage: false,
-          gems,
-          metals
+          GemPage: false
         };
-      }
+    }
+
+  gemsByColor = (searchWord) => {
+    let filteredGems = this.props.gems.filter(gem => {
+        return gem.name.includes(searchWord);
+      })
+      console.log(filteredGems);
+  }
 
 
-
-    render() {
-      const GemPageDisplay = this.state.GemPage ? { display: 'none' } : {};
-
+  render() {
+    const GemPageDisplay = this.state.GemPage ? { display: 'none' } : {};
+    const gemCards = this.props.gems.map(gem => {
+      return <GemCard key={gem.id} gemName={gem.name} gemFam ={gem.family} gemImg = {gem.image}/>
+    })
 
     return (
       <div style={GemPageDisplay}>
         <div>
           <h1>Evermore Gems </h1>
-          <h2> instructions </h2>
+          <h2> Instructions </h2>
           <input type="text"/>
-          <button>Search</button>
+          <button onClick={this.gemsByColor('M')}>Search</button>
           <select>
             <option value= "white"> White </option>
             <option value= "red"> Red </option>
@@ -41,17 +46,14 @@ class GemsPage extends Component {
           </select>
         </div>
         <div className="result">
-        {gems.map((gem) => {
-          return <GemCard key={gem.id} allGems={gem.Name}/> 
-        })}
-        
-
+          {gemCards}
         </div>
       </div>
     );
   }
 
-  
+
 }
+
 
 export default GemsPage;
