@@ -225,8 +225,7 @@ const gems = [
     },
     {
         "name": "Rose Quartz",
-        "id": 29,,
-        "image": "https://i.imgur.com/J1ZULQo.jpg"
+        "id": 29,
         "color": ["Pink"],
         "family": "Quartz",
         "hardness": [7],
@@ -234,8 +233,7 @@ const gems = [
     },
     {
         "name": "Smoky Quartz",
-        "id": 30,,
-        "image": "https://i.imgur.com/J1ZULQo.jpg"
+        "id": 30,
         "color": ["Green"],
         "family": "Quartz",
         "hardness": [7],
@@ -299,8 +297,7 @@ const gems = [
     },
     {
         "name": "Chrome Tourmaline",
-        "id": 38,,
-        "image": "https://i.imgur.com/vXzrtJz.jpg"
+        "id": 38,
         "color": ["Green"],
         "family": "Tourmaline",
         "hardness": [7, 7.5],
@@ -364,8 +361,7 @@ const gems = [
     },
     {
         "name": "Watermelon Tourmaline",
-        "id": 46,,
-        "image": "https://i.imgur.com/vXzrtJz.jpg"
+        "id": 46,
         "color": ["Red", "Green", "Pink"],
         "family": "Tourmaline",
         "hardness": [7, 7.5],
