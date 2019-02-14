@@ -1,406 +1,458 @@
 const gems = [
     {
-        "Name": "Aquamarine",
+        "name": "Aquamarine",
         "id": 1,
-        "Color": ["Blue"],
-        "Family": "Beryl",
-        "Hardness": [7.5, 8]
+        "color": ["Blue"],
+        "family": "Beryl",
+        "hardness": [7.5, 8],
+        "image": "https://i.imgur.com/mupSKCl.jpg"
     },
     {
-        "Name": "Bixbite",
+        "name": "Bixbite",
         "id": 2,
-        "Color": ["Red"],
-        "Family": "Beryl",
-        "Hardness": [7.5, 8]
+        "color": ["Red"],
+        "family": "Beryl",
+        "hardness": [7.5, 8],
+        "image": "https://i.imgur.com/mupSKCl.jpg"
     },
     {
-        "Name": "Emerald",
+        "name": "Emerald",
         "id": 3,
-        "Color": ["Green"],
-        "Family": "Beryl",
-        "Hardness": [7.5, 8]
+        "color": ["Green"],
+        "family": "Beryl",
+        "hardness": [7.5, 8],
+        "image": "https://i.imgur.com/mupSKCl.jpg"
     },
     {
-        "Name": "Goshenite",
+        "name": "Goshenite",
         "id": 4,
-        "Color": ["White"],
-        "Family": "Beryl",
-        "Hardness": [7.5, 8]
+        "color": ["White"],
+        "family": "Beryl",
+        "hardness": [7.5, 8],
+        "image": "https://i.imgur.com/mupSKCl.jpg"
     },
     {
-        "Name": "Heliodor",
+        "name": "Heliodor",
         "id": 5,
-        "Color": ["Yellow"],
-        "Family": "Beryl",
-        "Hardness": [7.5, 8]
+        "color": ["Yellow"],
+        "family": "Beryl",
+        "hardness": [7.5, 8],
+        "image": "https://i.imgur.com/mupSKCl.jpg"
     },
     {
-        "Name": "Maxixe",
+        "name": "Maxixe",
         "id": 6,
-        "Color": ["Yellow"],
-        "Family": "Beryl",
-        "Hardness": [7.5, 8]
+        "color": ["Yellow"],
+        "family": "Beryl",
+        "hardness": [7.5, 8],
+        "image": "https://i.imgur.com/mupSKCl.jpg"
     },
     {
-        "Name": "Morganite",
+        "name": "Morganite",
         "id": 7,
-        "Color": ["Pink"],
-        "Family": "Beryl",
-        "Hardness": [7.5, 8]
+        "color": ["Pink"],
+        "family": "Beryl",
+        "hardness": [7.5, 8],
+        "image": "https://i.imgur.com/mupSKCl.jpg"
     },
     {
-        "Name": "Ruby",
+        "name": "Ruby",
         "id": 8,
-        "Color": ["Red"],
-        "Family": "Corundum",
-        "Hardness": [9]
+        "color": ["Red"],
+        "family": "Corundum",
+        "hardness": [9],
+        "image": "https://i.imgur.com/5Vs4Qrm.jpg"
     },
     {
-        "Name": "Sapphire",
+        "name": "Sapphire",
         "id": 9,
-        "Color": ["Yellow", "Green", "Blue", "Purple", "Pink", "White", "Black", "Brown"],
-        "Family": "Corundum",
-        "Hardness": [9]
+        "color": ["Yellow", "Green", "Blue", "Purple", "Pink", "White", "Black", "Brown"],
+        "family": "Corundum",
+        "hardness": [9],
+        "image": "https://i.imgur.com/5Vs4Qrm.jpg"
     },
     {
-        "Name": "Padparadscha",
+        "name": "Padparadscha",
         "id": 10,
-        "Color": ["Orange", "Pink"],
-        "Family": "Corundum",
-        "Hardness": [9]
+        "color": ["Orange", "Pink"],
+        "family": "Corundum",
+        "hardness": [9],
+        "image": "https://i.imgur.com/5Vs4Qrm.jpg"
     },
     {
-        "Name": "Diamond",
+        "name": "Diamond",
         "id": 11,
-        "Color": ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink", "White", "Black", "Grey", "Brown"],
-        "Family": "Diamond",
-        "Hardness": [10]
+        "color": ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink", "White", "Black", "Grey", "Brown"],
+        "family": "Diamond",
+        "hardness": [10],
+        "image": "https://i.imgur.com/eFfEgvb.jpg"
     },
     {
-        "Name": "MoonStone",
+        "name": "MoonStone",
         "id": 12,
-        "Color": ["White"],
-        "Family": "Feldspar",
-        "Hardness": [6, 6.5]
+        "color": ["White"],
+        "family": "Feldspar",
+        "hardness": [6, 6.5],
+        "image": "https://i.imgur.com/DOQd2zd.jpg"
     },
     {
-        "Name": "Almandine",
+        "name": "Almandine",
         "id": 13,
-        "Color": ["Red"],
-        "Family": "Garnet",
-        "Hardness": [6.5, 8.5]
+        "color": ["Red"],
+        "family": "Garnet",
+        "hardness": [6.5, 8.5],
+        "image": "https://i.imgur.com/mupSKCl.jpg"
     },
     {
-        "Name": "Hessonite",
+        "name": "Hessonite",
         "id": 14,
-        "Color": ["Orange"],
-        "Family": "Garnet",
-        "Hardness": [6.5, 8.5]
+        "color": ["Orange"],
+        "family": "Garnet",
+        "hardness": [6.5, 8.5],
+        "image": "https://i.imgur.com/mupSKCl.jpg"
     },
     {
-        "Name": "Pyrope",
+        "name": "Pyrope",
         "id": 15,
-        "Color": ["Red", "Purple"],
-        "Family": "Garnet",
-        "Hardness": [6.5, 8.5]
+        "color": ["Red", "Purple"],
+        "family": "Garnet",
+        "hardness": [6.5, 8.5],
+        "image": "https://i.imgur.com/mupSKCl.jpg"
     },
     {
-        "Name": "Rhodalite",
+        "name": "Rhodalite",
         "id": 16,
-        "Color": ["Red", "Pink"],
-        "Family": "Garnet",
-        "Hardness": [6.5, 8.5]
+        "color": ["Red", "Pink"],
+        "family": "Garnet",
+        "hardness": [6.5, 8.5],
+        "image": "https://i.imgur.com/mupSKCl.jpg"
     },
     {
-        "Name": "Tsavorite",
+        "name": "Tsavorite",
         "id": 17,
-        "Color": ["Green"],
-        "Family": "Garnet",
-        "Hardness": [6.5, 8.5]
+        "color": ["Green"],
+        "family": "Garnet",
+        "hardness": [6.5, 8.5],
+        "image": "https://i.imgur.com/mupSKCl.jpg"
     },
     {
-        "Name": "Jadeite",
+        "name": "Jadeite",
         "id": 18,
-        "Color": ["Green", "Blue", "Purple"],
-        "Family": "Jade",
-        "Hardness": [6, 7]
+        "color": ["Green", "Blue", "Purple"],
+        "family": "Jade",
+        "hardness": [6, 7],
+        "image": "https://i.imgur.com/kHLGncp.jpg"
     },
     {
-        "Name": "Nephrite",
+        "name": "Nephrite",
         "id": 19,
-        "Color": ["Yellow", "Green", "Blue", "Purple", "White", "Black", "Grey", "Brown"],
-        "Family": "Jade",
-        "Hardness": [6, 7]
+        "color": ["Yellow", "Green", "Blue", "Purple", "White", "Black", "Grey", "Brown"],
+        "family": "Jade",
+        "hardness": [6, 7],
+        "image": "https://i.imgur.com/kHLGncp.jpg"
     },
     {
-        "Name": "Fire Opal",
+        "name": "Fire Opal",
         "id": 20,
-        "Color": ["Red", "Orange", "Yellow"],
-        "Family": "Jade",
-        "Hardness": [5.5, 6.5]
+        "color": ["Red", "Orange", "Yellow"],
+        "family": "Jade",
+        "hardness": [5.5, 6.5],
+        "image": "https://i.imgur.com/x5JcADM.jpg"
     },
     {
-        "Name": "Opal",
+        "name": "Opal",
         "id": 21,
-        "Color": ["Blue", "Purple", "Pink", "White", "Black", "Brown"],
-        "Family": "Jade",
-        "Hardness": [5.5, 6.5]
+        "color": ["Blue", "Purple", "Pink", "White", "Black", "Brown"],
+        "family": "Jade",
+        "hardness": [5.5, 6.5],
+        "image": "https://i.imgur.com/x5JcADM.jpg"
     },
     {
-        "Name": "Pearl",
+        "name": "Pearl",
         "id": 22,
-        "Color": ["Orange", "Yellow", "Green", "Blue", "Pink", "White", "Black", "Grey", "Brown"],
-        "Family": "Pearl",
-        "Hardness": [2.5, 4.5]
+        "color": ["Orange", "Yellow", "Green", "Blue", "Pink", "White", "Black", "Grey", "Brown"],
+        "family": "Pearl",
+        "hardness": [2.5, 4.5],
+        "image": "https://i.imgur.com/oi9kZTT.jpg"
     },
     {
-        "Name": "Peridot",
+        "name": "Peridot",
         "id": 23,
-        "Color": ["Green"],
-        "Family": "Peridot",
-        "Hardness": [7]
+        "color": ["Green"],
+        "family": "Peridot",
+        "hardness": [7],
+        "image": "https://i.imgur.com/kAA84Xb.jpg"
     },
     {
-        "Name": "Amethyst",
+        "name": "Amethyst",
         "id": 24,
-        "Color": ["Purple"],
-        "Family": "Quartz",
-        "Hardness": [7]
+        "color": ["Purple"],
+        "family": "Quartz",
+        "hardness": [7],
+        "image": "https://i.imgur.com/J1ZULQo.jpg"
     },
     {
-        "Name": "Carnelian",
+        "name": "Carnelian",
         "id": 25,
-        "Color": ["Red", "Orange"],
-        "Family": "Quartz",
-        "Hardness": [7]
+        "color": ["Red", "Orange"],
+        "family": "Quartz",
+        "hardness": [7],
+        "image": "https://i.imgur.com/J1ZULQo.jpg"
     },
     {
-        "Name": "Citrine",
+        "name": "Citrine",
         "id": 26,
-        "Color": ["Yellow"],
-        "Family": "Quartz",
-        "Hardness": [7]
+        "color": ["Yellow"],
+        "family": "Quartz",
+        "hardness": [7],
+        "image": "https://i.imgur.com/J1ZULQo.jpg"
     },
     {
-        "Name": "Onyx",
+        "name": "Onyx",
         "id": 27,
-        "Color": ["Black"],
-        "Family": "Quartz",
-        "Hardness": [7]
+        "color": ["Black"],
+        "family": "Quartz",
+        "hardness": [7],
+        "image": "https://i.imgur.com/J1ZULQo.jpg"
     },
     {
-        "Name": "Prasiolite",
+        "name": "Prasiolite",
         "id": 28,
-        "Color": ["Green"],
-        "Family": "Quartz",
-        "Hardness": [7]
+        "color": ["Green"],
+        "family": "Quartz",
+        "hardness": [7],
+        "image": "https://i.imgur.com/J1ZULQo.jpg"
     },
     {
-        "Name": "Rose Quartz",
-        "id": 29,
-        "Color": ["Pink"],
-        "Family": "Quartz",
-        "Hardness": [7]
+        "name": "Rose Quartz",
+        "id": 29,,
+        "image": "https://i.imgur.com/J1ZULQo.jpg"
+        "color": ["Pink"],
+        "family": "Quartz",
+        "hardness": [7],
+        "image": "https://i.imgur.com/J1ZULQo.jpg"
     },
     {
-        "Name": "Smoky Quartz",
-        "id": 30,
-        "Color": ["Green"],
-        "Family": "Quartz",
-        "Hardness": [7]
+        "name": "Smoky Quartz",
+        "id": 30,,
+        "image": "https://i.imgur.com/J1ZULQo.jpg"
+        "color": ["Green"],
+        "family": "Quartz",
+        "hardness": [7],
+        "image": "https://i.imgur.com/J1ZULQo.jpg"
     },
     {
-        "Name": "Almandine Spinel",
+        "name": "Almandine Spinel",
         "id": 31,
-        "Color": ["Purple"],
-        "Family": "Spinel",
-        "Hardness": [7.5, 8.0]
+        "color": ["Purple"],
+        "family": "Spinel",
+        "hardness": [7.5, 8.0],
+        "image": "https://i.imgur.com/J1ZULQo.jpg"
     },
     {
-        "Name": "Gahnospinel",
+        "name": "Gahnospinel",
         "id": 32,
-        "Color": ["Green"],
-        "Family": "Spinel",
-        "Hardness": [7.5, 8.0]
+        "color": ["Green"],
+        "family": "Spinel",
+        "hardness": [7.5, 8.0],
+        "image": "https://i.imgur.com/J1ZULQo.jpg"
     },
     {
-        "Name": "Peridotite",
+        "name": "Peridotite",
         "id": 33,
-        "Color": ["Green"],
-        "Family": "Spinel",
-        "Hardness": [7.5, 8.0]
+        "color": ["Green"],
+        "family": "Spinel",
+        "hardness": [7.5, 8.0],
+        "image": "https://i.imgur.com/J1ZULQo.jpg"
     },
     {
-        "Name": "Rubicelle",
+        "name": "Rubicelle",
         "id": 34,
-        "Color": ["Red"],
-        "Family": "Spinel",
-        "Hardness": [7.5, 8.0]
+        "color": ["Red"],
+        "family": "Spinel",
+        "hardness": [7.5, 8.0],
+        "image": "https://i.imgur.com/J1ZULQo.jpg"
     },
     {
-        "Name": "Spinel",
+        "name": "Spinel",
         "id": 35,
-        "Color": ["Blue", "Pink", "White", "Black", "Brown"],
-        "Family": "Spinel",
-        "Hardness": [7.5, 8.0]
+        "color": ["Blue", "Pink", "White", "Black", "Brown"],
+        "family": "Spinel",
+        "hardness": [7.5, 8.0],
+        "image": "https://i.imgur.com/J1ZULQo.jpg"
     },
     {
-        "Name": "Topaz",
+        "name": "Topaz",
         "id": 36,
-        "Color": ["Red", "Orange", "Yellow", "Green", "Blue", "Pink", "White", "Brown"],
-        "Family": "Topaz",
-        "Hardness": [8]
+        "color": ["Red", "Orange", "Yellow", "Green", "Blue", "Pink", "White", "Brown"],
+        "family": "Topaz",
+        "hardness": [8],
+        "image": "https://i.imgur.com/uDTv9o5.jpg"
     },
     {
-        "Name": "Achroite",
+        "name": "Achroite",
         "id": 37,
-        "Color": ["White"],
-        "Family": "Tourmaline",
-        "Hardness": [7, 7.5]
+        "color": ["White"],
+        "family": "Tourmaline",
+        "hardness": [7, 7.5],
+        "image": "https://i.imgur.com/vXzrtJz.jpg"
     },
     {
-        "Name": "Chrome Tourmaline",
-        "id": 38,
-        "Color": ["Green"],
-        "Family": "Tourmaline",
-        "Hardness": [7, 7.5]
+        "name": "Chrome Tourmaline",
+        "id": 38,,
+        "image": "https://i.imgur.com/vXzrtJz.jpg"
+        "color": ["Green"],
+        "family": "Tourmaline",
+        "hardness": [7, 7.5],
+        "image": "https://i.imgur.com/vXzrtJz.jpg"
     },
     {
-        "Name": "Dravite",
+        "name": "Dravite",
         "id": 39,
-        "Color": ["Black", "Brown"],
-        "Family": "Tourmaline",
-        "Hardness": [7, 7.5]
+        "color": ["Black", "Brown"],
+        "family": "Tourmaline",
+        "hardness": [7, 7.5],
+        "image": "https://i.imgur.com/vXzrtJz.jpg"
     },
     {
-        "Name": "Elbaite",
+        "name": "Elbaite",
         "id": 40,
-        "Color": ["Green"],
-        "Family": "Tourmaline",
-        "Hardness": [7, 7.5]
+        "color": ["Green"],
+        "family": "Tourmaline",
+        "hardness": [7, 7.5],
+        "image": "https://i.imgur.com/vXzrtJz.jpg"
     },
     {
-        "Name": "Indicolite",
+        "name": "Indicolite",
         "id": 41,
-        "Color": ["Blue"],
-        "Family": "Tourmaline",
-        "Hardness": [7, 7.5]
+        "color": ["Blue"],
+        "family": "Tourmaline",
+        "hardness": [7, 7.5],
+        "image": "https://i.imgur.com/vXzrtJz.jpg"
     },
     {
-        "Name": "Rubellite",
+        "name": "Rubellite",
         "id": 42,
-        "Color": ["Red", "Pink"],
-        "Family": "Tourmaline",
-        "Hardness": [7, 7.5]
+        "color": ["Red", "Pink"],
+        "family": "Tourmaline",
+        "hardness": [7, 7.5],
+        "image": "https://i.imgur.com/vXzrtJz.jpg"
     },
     {
-        "Name": "Schorl",
+        "name": "Schorl",
         "id": 43,
-        "Color": ["Green"],
-        "Family": "Tourmaline",
-        "Hardness": [7, 7.5]
+        "color": ["Green"],
+        "family": "Tourmaline",
+        "hardness": [7, 7.5],
+        "image": "https://i.imgur.com/vXzrtJz.jpg"
     },
     {
-        "Name": "Siberite",
+        "name": "Siberite",
         "id": 44,
-        "Color": ["Purple"],
-        "Family": "Tourmaline",
-        "Hardness": [7, 7.5]
+        "color": ["Purple"],
+        "family": "Tourmaline",
+        "hardness": [7, 7.5],
+        "image": "https://i.imgur.com/vXzrtJz.jpg"
     },
     {
-        "Name": "Verdelite",
+        "name": "Verdelite",
         "id": 45,
-        "Color": ["Green"],
-        "Family": "Tourmaline",
-        "Hardness": [7, 7.5]
+        "color": ["Green"],
+        "family": "Tourmaline",
+        "hardness": [7, 7.5],
+        "image": "https://i.imgur.com/vXzrtJz.jpg"
     },
     {
-        "Name": "Watermelon Tourmaline",
-        "id": 46,
-        "Color": ["Red", "Green", "Pink"],
-        "Family": "Tourmaline",
-        "Hardness": [7, 7.5]
+        "name": "Watermelon Tourmaline",
+        "id": 46,,
+        "image": "https://i.imgur.com/vXzrtJz.jpg"
+        "color": ["Red", "Green", "Pink"],
+        "family": "Tourmaline",
+        "hardness": [7, 7.5],
+        "image": "https://i.imgur.com/vXzrtJz.jpg"
     },
     {
-        "Name": "Turquoise",
+        "name": "Turquoise",
         "id": 47,
-        "Color": ["Green", "Blue"],
-        "Family": "Turquoise",
-        "Hardness": [5, 6]
+        "color": ["Green", "Blue"],
+        "family": "Turquoise",
+        "hardness": [5, 6],
+        "image": "https://i.imgur.com/pE2BSmW.jpg"
     },
     {
-        "Name": "Zircon",
+        "name": "Zircon",
         "id": 48,
-        "Color": ["Red", "Yellow", "Green", "Blue", "White", "Grey", "Brown"],
-        "Family": "Zircon",
-        "Hardness": [7.5]
+        "color": ["Red", "Yellow", "Green", "Blue", "White", "Grey", "Brown"],
+        "family": "Zircon",
+        "hardness": [7.5],
+        "image": "https://i.imgur.com/vq8Q35k.jpg"
     }
 ]
 
 const metals = [
     {
-        "Name": "Gold",
+        "name": "Gold",
         "id": 1,
-        "Color": ["Yellow", "Pink", "Green"],
-        "Makeup": ["Gold", "Silver", "Copper"],
-        "Durable": "True",
-        "Resizeable": "True"
+        "color": ["Yellow", "Pink", "Green"],
+        "makeup": ["Gold", "Silver", "Copper"],
+        "durable": "True",
+        "resizeable": "True"
     },
     {
-        "Name": "White Gold",
+        "name": "White Gold",
         "id": 2,
-        "Color": ["White"],
-        "Makeup": ["Gold", "Silver", "Rhodium-Plated"],
-        "Durable": "True",
-        "Resizeable": "True"
+        "color": ["White"],
+        "makeup": ["Gold", "Silver", "Rhodium-Plated"],
+        "durable": "True",
+        "resizeable": "True"
     },
     {
-        "Name": "Palladium",
+        "name": "Palladium",
         "id": 3,
-        "Color": ["White"],
-        "Makeup": ["Platinum-group"],
-        "Durable": "True",
-        "Resizeable": "True"
+        "color": ["White"],
+        "makeup": ["Platinum-group"],
+        "durable": "True",
+        "resizeable": "True"
     },
     {
-        "Name": "Platinum",
+        "name": "Platinum",
         "id": 4,
-        "Color": ["White"],
-        "Makeup": ["Platinum-group"],
-        "Durable": "True",
-        "Resizeable": "True"
+        "color": ["White"],
+        "makeup": ["Platinum-group"],
+        "durable": "True",
+        "resizeable": "True"
     },
     {
-        "Name": "Silver",
+        "name": "Silver",
         "id": 5,
-        "Color": ["White"],
-        "Makeup": ["Silver"],
-        "Durable": "False",
-        "Resizeable": "True"
+        "color": ["White"],
+        "makeup": ["Silver"],
+        "durable": "False",
+        "resizeable": "True"
     },
     {
-        "Name": "Steel",
+        "name": "Steel",
         "id": 6,
-        "Color": ["White"],
-        "Makeup": ["Iron"],
-        "Durable": "True",
-        "Resizeable": "False"
+        "color": ["White"],
+        "makeup": ["Iron"],
+        "durable": "True",
+        "resizeable": "False"
     },
     {
-        "Name": "Titanium",
+        "name": "Titanium",
         "id": 7,
-        "Color": ["White"],
-        "Makeup": ["Titanium"],
-        "Durable": "True",
-        "Resizeable": "False"
+        "color": ["White"],
+        "makeup": ["Titanium"],
+        "durable": "True",
+        "resizeable": "False"
     },
     {
-        "Name": "Tungsten",
+        "name": "Tungsten",
         "id": 8,
-        "Color": ["White"],
-        "Makeup": ["Tungsten"],
-        "Durable": "True",
-        "Resizeable": "False"
+        "color": ["White"],
+        "makeup": ["Tungsten"],
+        "durable": "True",
+        "resizeable": "False"
     }
 ]
 
