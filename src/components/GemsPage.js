@@ -8,7 +8,7 @@ class GemsPage extends Component {
         this.state = {
           gemPage: false,
           searchInput: '',
-          filteredGems: []
+          searchedGems: []
         };
     }
 
@@ -29,23 +29,19 @@ class GemsPage extends Component {
   }
 
   selectColor = (e) => {
-    let selectedGems = [];
     let clickedColor = e.target.value
-    selectedGems = this.props.gems.filter(gem => {
+    let searchedGems = this.props.gems.filter(gem => {
       return gem.color.includes(clickedColor)
     })
-
-    //e.target.value 
-    //iterate over the gems array
-    //second iterator for each color
-    //if the the target value is included in the array
-    //put that item into the select gems array
-
+    this.setState({
+      searchedGems
+    })
+    console.log('searched gems',searchedGems)
   }
 
   render() {
     const GemPageDisplay = this.state.GemPage ? { display: 'none' } : {};
-    const gemCards = this.state.filteredGems.map(gem => {
+    const gemCards = this.state.searchedGems.map(gem => {
       return <GemCard key={gem.id} gemName={gem.name} gemFam={gem.family} gemImg={gem.image}/>
     })
 
