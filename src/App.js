@@ -24,19 +24,18 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       })
+
+      fetch('http://whateverly-datasets.herokuapp.com/api/v1/metals')
+      .then(response => response.json())
+      .then(metals => {
+        this.setState({
+          metals: metals.metals
+        })
+      })
+      .catch(err => {
+        throw new Error(err);
+      })
   }
-    // fetch('http://whateverly-datasets.herokuapp.com/api/v1/metals')
-    // .then(response => response.json())
-    // .then(metals => console.log(metals))
-    // .then(metals => {
-    //   this.setState({
-    //     metals: metals
-    //   });
-    // })
-    // .catch(err => {
-    //   throw new Error(err);
-    // });
-  // }
 
   render() {
     return (

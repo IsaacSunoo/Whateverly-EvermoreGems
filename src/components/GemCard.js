@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './GemCarsStyle.css';
+import './GemCardStyle.css';
 
 
 class GemCard extends Component {
