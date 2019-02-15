@@ -5,7 +5,7 @@ import './GemCarsStyle.css';
 class GemCard extends Component {
 
   render() {
-    return( 
+    return(
       <div className="gem-cards">
         <h5>
           {this.props.gemName}
@@ -14,13 +14,8 @@ class GemCard extends Component {
           {this.props.gemFam}
         </h6>
         <img src= {this.props.gemImg}/>
-
       </div>
     )
-
   }
-
-
-
 }
-export default GemCard
+export default GemCard;
