@@ -1,57 +1,77 @@
 import React, { Component } from 'react';
-import GemCard from './GemCard'
-import { gems, metals } from '../dataset/evermoreGems';
-
+import GemCard from './GemCard';
 
 class GemsPage extends Component {
     constructor() {
         super();
         this.state = {
-          GemPage: false,
-          gems,
-          metals
+          gemPage: false,
+          searchInput: '',
+          searchedGems: []
         };
-      }
+    }
 
+  updateInputValue = e => {
+    let searchInput = e.target.value;
+    this.setState({
+      searchInput: searchInput.toLowerCase()
+    })
+  }
 
+  gemsByName = () => {
+    let searchedGems = this.props.gems.filter(gem => {
+      return gem.name.toLowerCase().includes(this.state.searchInput);
+      })
+    this.setState({
+      searchedGems
+    })
+  }
 
-    render() {
-      const GemPageDisplay = this.state.GemPage ? { display: 'none' } : {};
+  selectColor = (e) => {
+    let clickedColor = e.target.value
+    let searchedGems = this.props.gems.filter(gem => {
+      return gem.color.includes(clickedColor)
+    })
+    this.setState({
+      searchedGems
+    })
+    console.log('searched gems',searchedGems)
+  }
 
+  render() {
+    const GemPageDisplay = this.state.GemPage ? { display: 'none' } : {};
+    const gemCards = this.state.searchedGems.map(gem => {
+      return <GemCard key={gem.id} gemName={gem.name} gemFam={gem.family} gemImg={gem.image}/>
+    })
 
     return (
       <div style={GemPageDisplay}>
         <div>
-          <h1>Evermore Gems </h1>
-          <h2> instructions </h2>
-          <input type="text"/>
-          <button>Search</button>
-          <select>
-            <option value= "white"> White </option>
-            <option value= "red"> Red </option>
-            <option value= "orange"> Orange </option>
-            <option value= "yellow"> Yellow </option>
-            <option value= "green"> Green </option>
-            <option value= "blue"> Blue </option>
-            <option value= "purple"> Purple </option>
-            <option value= "pink"> Pink </option>
-            <option value= "brown"> Brown </option>
-            <option value= "grey"> Grey </option>
-            <option value= "black"> Black </option>
+          <h1>Evermore Gems</h1>
+          <h2>Instructions</h2>
+          <input value={this.state.searchInput} onChange={this.updateInputValue} type="text" />
+          <button onClick={this.gemsByName}>Search</button>
+          <select onChange={this.selectColor}>
+            <option value="White">White</option>
+            <option value="Red">Red</option>
+            <option value="Orange">Orange</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+            <option value="Purple">Purple</option>
+            <option value="Pink">Pink</option>
+            <option value="Brown">Brown</option>
+            <option value="Grey">Grey</option>
+            <option value="Black">Black</option>
           </select>
         </div>
         <div className="result">
-        {gems.map((gem) => {
-          return <GemCard key={gem.id} allGems={gem.Name}/> 
-        })}
-        
-
+          {gemCards}
         </div>
       </div>
     );
   }
-
-  
 }
+
 
 export default GemsPage;

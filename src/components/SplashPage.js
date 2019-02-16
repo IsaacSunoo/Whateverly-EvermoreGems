@@ -20,13 +20,7 @@ class SplashPage extends Component {
 
     return (
       <div style={splashDisplay}>
-        <div>
-          <h1>Evermore Gems</h1>
-          <h2>Welcome ...</h2>
-          <button onClick={this.hideSplash}>
-            Continue
-          </button>
-        </div>
+    
       </div>
     );
   }
