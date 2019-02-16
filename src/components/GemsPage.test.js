@@ -13,4 +13,17 @@ describe('GemsPage', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should take in a value and lowercase it', () =>{
+    updateInputValue('Red');
+    
+  });
+
+  it('', () =>{
+
+  });
+
+  it('', () =>{
+
+  });
+
 });

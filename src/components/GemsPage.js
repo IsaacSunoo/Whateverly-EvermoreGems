@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import GemCard from './GemCard';
 
 class GemsPage extends Component {
