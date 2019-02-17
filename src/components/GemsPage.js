@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import GemCard from './GemCard';
+import MetalCard from './MetalCard';
+import Header from './Header';
+import './scss/GemsPageStyle.scss'
 
 class GemsPage extends Component {
     constructor() {
@@ -16,6 +19,12 @@ class GemsPage extends Component {
     this.setState({
       searchInput: searchInput.toLowerCase()
     })
+  }
+
+  determineDurability = () => {
+    if (this.state.metal.durable === 'True') {
+      console.log('Determine function entered');
+    }
   }
 
   gemsByName = () => {
@@ -41,33 +50,43 @@ class GemsPage extends Component {
   render() {
     const GemPageDisplay = this.state.GemPage ? { display: 'none' } : {};
     const gemCards = this.state.searchedGems.map(gem => {
-      return <GemCard key={gem.id} gemName={gem.name} gemFam={gem.family} gemImg={gem.image}/>
+      return <GemCard key={gem.id} gemName={gem.name} gemFam={gem.family} gemImg={gem.image} />
+    })
+
+    const metalsCards = this.props.metals.map(metal => {
+      return <MetalCard key={metal.id} metalName={metal.name} metalColors={metal.color} metalMakeup={metal.makeup} durable={this.determineDurability}/>
     })
 
     return (
       <div style={GemPageDisplay}>
-        <div>
-          <h1>Evermore Gems</h1>
-          <h2>Instructions</h2>
-          <input value={this.state.searchInput} onChange={this.updateInputValue} type="text" />
-          <button onClick={this.gemsByName}>Search</button>
-          <select onChange={this.selectColor}>
-            <option value="White">White</option>
-            <option value="Red">Red</option>
-            <option value="Orange">Orange</option>
-            <option value="Yellow">Yellow</option>
-            <option value="Green">Green</option>
-            <option value="Blue">Blue</option>
-            <option value="Purple">Purple</option>
-            <option value="Pink">Pink</option>
-            <option value="Brown">Brown</option>
-            <option value="Grey">Grey</option>
-            <option value="Black">Black</option>
-          </select>
+        <div className="container">
+          <Header />
+          <input
+            value={this.state.searchInput}
+            onChange={this.updateInputValue}
+            type="text"
+            placeholder="Search Gem by Name"
+          />
+          <button onClick={this.gemsByName} className='search-button'>Find Gems!</button>
+          <p>
+            <span>Search Gem by Color</span>
+            <select onChange={this.selectColor}>
+              <option value="White">White</option>
+              <option value="Red">Red</option>
+              <option value="Orange">Orange</option>
+              <option value="Yellow">Yellow</option>
+              <option value="Green">Green</option>
+              <option value="Blue">Blue</option>
+              <option value="Purple">Purple</option>
+              <option value="Pink">Pink</option>
+              <option value="Brown">Brown</option>
+              <option value="Grey">Grey</option>
+              <option value="Black">Black</option>
+            </select>
+          </p>
         </div>
-        <div className="result">
-          {gemCards}
-        </div>
+        <div className="gem-results">{gemCards}</div>
+        <div className="metal-results">{metalsCards}</div>
       </div>
     );
   }

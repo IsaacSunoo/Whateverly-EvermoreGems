@@ -1,0 +1,15 @@
+$lavender: #C59DF9;
+
+.header-container {
+
+    h1, h2, p {
+        background-color: $lavender;
+        color: #72F3EE;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    h2 {
+        padding: 0 130px 30px;
+    }
+
+}
