@@ -20,7 +20,7 @@ class SplashPage extends Component {
 
     return (
       <div style={splashDisplay}>
-    
+        
       </div>
     );
   }

@@ -41,7 +41,7 @@ class App extends Component {
     return (
       <div>
         <SplashPage />
-        <GemsPage gems={this.state.gems}/>
+        <GemsPage gems={this.state.gems} metals={this.state.metals}/>
       </div>
     );
   }

@@ -1,21 +1,18 @@
-import React, { Component } from 'react';
-import './GemCardStyle.scss';
+import React from 'react';
+import './scss/GemCardStyle.scss';
 
-
-class GemCard extends Component {
-
-  render() {
+function GemCard(props) {
     return(
       <div className="gem-cards">
         <h5>
-          {this.props.gemName}
+          {props.gemName}
         </h5>
         <h6>
-          {this.props.gemFam}
+          {props.gemFam}
         </h6>
-        <img src= {this.props.gemImg}/>
+        <img src= {props.gemImg}/>
       </div>
     )
-  }
 }
+
 export default GemCard;
