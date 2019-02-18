@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import GemCard from './GemCard';
-import MetalCard from './MetalCard';
 import Header from './Header';
 import './scss/GemsPageStyle.scss'
 
@@ -20,13 +19,7 @@ class GemsPage extends Component {
       searchInput: searchInput.toLowerCase()
     })
   }
-
-  determineDurability = () => {
-    if (this.state.metal.durable === 'True') {
-      console.log('Determine function entered');
-    }
-  }
-
+  
   gemsByName = () => {
     let searchedGems = this.props.gems.filter(gem => {
       return gem.name.toLowerCase().includes(this.state.searchInput);
@@ -44,17 +37,13 @@ class GemsPage extends Component {
     this.setState({
       searchedGems
     })
-    console.log('searched gems',searchedGems)
   }
+
 
   render() {
     const GemPageDisplay = this.state.GemPage ? { display: 'none' } : {};
     const gemCards = this.state.searchedGems.map(gem => {
-      return <GemCard key={gem.id} gemName={gem.name} gemFam={gem.family} gemImg={gem.image} />
-    })
-
-    const metalsCards = this.props.metals.map(metal => {
-      return <MetalCard key={metal.id} metalName={metal.name} metalColors={metal.color} metalMakeup={metal.makeup} durable={this.determineDurability}/>
+      return <GemCard selectGem={this.props.selectGem} key={gem.id} gemId={gem.id} gemName={gem.name} gemFam={gem.family} gemImg={gem.image} />
     })
 
     return (
@@ -86,7 +75,6 @@ class GemsPage extends Component {
           </p>
         </div>
         <div className="gem-results">{gemCards}</div>
-        <div className="metal-results">{metalsCards}</div>
       </div>
     );
   }
