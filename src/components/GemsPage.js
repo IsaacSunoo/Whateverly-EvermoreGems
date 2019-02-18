@@ -60,6 +60,7 @@ class GemsPage extends Component {
           <p>
             <span>Search Gem by Color</span>
             <select onChange={this.selectColor}>
+              <option value="White">Select Color</option>
               <option value="White">White</option>
               <option value="Red">Red</option>
               <option value="Orange">Orange</option>
