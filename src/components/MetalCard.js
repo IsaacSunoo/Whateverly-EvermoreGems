@@ -2,7 +2,6 @@ import React from 'react';
 import './scss/MetalCardStyle.scss';
 
 function MetalCard(props) {
-    console.log(props);
 
   return (
     <div className='metal-card'>
@@ -17,6 +16,7 @@ function MetalCard(props) {
                 )
             })}
         </h6>
+        <button onClick={() => props.selectMetal(props.metalId)}>select</button>
     </div>
   )
 }
