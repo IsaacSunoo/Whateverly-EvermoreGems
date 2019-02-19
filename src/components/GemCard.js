@@ -19,4 +19,4 @@ function GemCard(props) {
 
 export default GemCard;
 
-//we add an anon func to button so it dosn't run on button creation
+// we add an anon func to button so it dosn't run on button creation //

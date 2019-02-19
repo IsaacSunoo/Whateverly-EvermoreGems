@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GemCard should match the snapshot with all data passed in 1`] = `
+<div
+  className="gem-cards"
+>
+  <img
+    className="gem-pic"
+  />
+  <article
+    className="gem-info"
+  >
+    <h5
+      className="gem-name"
+    />
+    <h6
+      className="gem-family"
+    />
+  </article>
+  <button
+    className="select-btn"
+    onClick={[Function]}
+  >
+    Select
+  </button>
+</div>
+`;
