@@ -5,6 +5,8 @@ import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });
+
+const selectMetalMock = jest.fn();
 const metalsCards = jest.fn();
 
 
@@ -24,16 +26,12 @@ describe('MetalsPage', () => {
   beforeEach(() => {
     wrapper = shallow(
       <MetalsPage
-        selectMetal={mockMetal} 
-        metalId={mockMetal.id} 
-        key={mockMetal.id} 
-        metalName={mockMetal.name} 
-        metalColors={mockMetal.color} 
-        metalMakeup={mockMetal.makeup}
+        selectMetal={selectMetalMock}
+        metals={mockMetal}
       />
     )
   })
-  
+
   it('should match the snapshot with all data passed in' , () =>{
     expect(wrapper).toMatchSnapshot();
   })

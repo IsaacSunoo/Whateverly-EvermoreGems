@@ -1,3 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MetalsPage should match the snapshot with all data passed in 1`] = `undefined`;
+exports[`MetalsPage should match the snapshot with all data passed in 1`] = `
+<div
+  className="metal-main"
+>
+  <h1>
+    Select a Metal to compliment your gem!
+  </h1>
+  <div
+    className="metal-container"
+  >
+    <MetalCard
+      key="8"
+      metalColors={
+        Array [
+          "White",
+        ]
+      }
+      metalId={8}
+      metalMakeup={
+        Array [
+          "Tungsten",
+        ]
+      }
+      metalName="Tungsten"
+      selectMetal={[MockFunction]}
+    />
+  </div>
+</div>
+`;

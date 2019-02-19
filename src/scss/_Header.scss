@@ -1,11 +1,12 @@
 .header-container {
 
-    h1, h2, p {
+    h1 {
         background-color: black;
         color: #FFF;
-        // font-family: 'Questrial', sans-serif;
         font-family: 'Amatic SC', cursive;
         letter-spacing: 2px;
+        padding: 12px 0;
+        // font-family: 'Questrial', sans-serif;
         // font-family: 'Bungee Shade', cursive;
         // font-family: 'Sacramento', cursive;
         // font-size: 1.8em;
@@ -16,7 +17,12 @@
     }
 
     h2 {
-        padding: 0 130px 30px;
+        padding: 13px 130px 12px;
+    }
+
+    p {
+        font-size: 1em;
+        padding: 0 182px 3px;
     }
 
 }
