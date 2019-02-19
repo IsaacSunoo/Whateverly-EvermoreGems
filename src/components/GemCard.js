@@ -1,5 +1,4 @@
 import React from 'react';
-import './scss/GemCardStyle.scss';
 
 function GemCard(props) {
     return(

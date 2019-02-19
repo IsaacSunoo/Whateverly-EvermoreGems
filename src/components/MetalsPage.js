@@ -1,6 +1,5 @@
 import React from 'react';
 import MetalCard from './MetalCard';
-import './scss/MetalPageStyle.scss';
 
 function MetalsPage(props)  {
   const metalsCards = props.metals.map(metal => {

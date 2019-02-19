@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import GemCard from './GemCard';
 import Header from './Header';
-import './scss/GemsPageStyle.scss'
 
 class GemsPage extends Component {
     constructor() {
@@ -19,7 +18,7 @@ class GemsPage extends Component {
       searchInput: searchInput.toLowerCase()
     })
   }
-  
+
   gemsByName = () => {
     let searchedGems = this.props.gems.filter(gem => {
       return gem.name.toLowerCase().includes(this.state.searchInput);

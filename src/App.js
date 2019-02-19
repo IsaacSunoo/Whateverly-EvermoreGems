@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import GemsPage from './components/GemsPage';
 import MetalsPage from './components/MetalsPage';
 import ResultsPage from './components/ResultsPage';
-import './App.css';
 
 class App extends Component {
   constructor() {
@@ -82,7 +81,7 @@ class App extends Component {
           this.state.display === 'results' &&
           <ResultsPage selectedGem={this.state.selectedGem} selectedMetal={this.state.selectedMetal} />
         }
-      
+
       </div>
     );
   }

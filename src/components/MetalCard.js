@@ -1,5 +1,4 @@
 import React from 'react';
-import './scss/MetalCardStyle.scss';
 
 function MetalCard(props) {
 
