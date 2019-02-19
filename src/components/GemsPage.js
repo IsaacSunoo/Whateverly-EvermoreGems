@@ -29,9 +29,9 @@ class GemsPage extends Component {
   }
 
   selectColor = (e) => {
-    let clickedColor = e.target.value
+    let clickedColor = e.target.value;
     let searchedGems = this.props.gems.filter(gem => {
-      return gem.color.includes(clickedColor)
+      return gem.color.includes(clickedColor);
     })
     this.setState({
       searchedGems
@@ -50,6 +50,7 @@ class GemsPage extends Component {
         <div className="container">
           <Header />
           <input
+            id='input-value'
             value={this.state.searchInput}
             onChange={this.updateInputValue}
             type="text"
@@ -58,8 +59,8 @@ class GemsPage extends Component {
           <button onClick={this.gemsByName} className='search-button'>Find Gems!</button>
           <p>
             <span>Search Gem by Color</span>
-            <select onChange={this.selectColor}>
-              <option value="White">Select Color</option>
+            <select onChange={this.selectColor} id='filter-colors'>
+              <option value="">Select Color</option>
               <option value="White">White</option>
               <option value="Red">Red</option>
               <option value="Orange">Orange</option>

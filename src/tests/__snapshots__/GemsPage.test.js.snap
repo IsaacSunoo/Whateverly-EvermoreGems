@@ -9,6 +9,7 @@ exports[`GemsPage should match the snapshot with all data passed in correctly 1`
   >
     <Header />
     <input
+      id="input-value"
       onChange={[Function]}
       placeholder="Search Gem by Name"
       type="text"
@@ -25,10 +26,11 @@ exports[`GemsPage should match the snapshot with all data passed in correctly 1`
         Search Gem by Color
       </span>
       <select
+        id="filter-colors"
         onChange={[Function]}
       >
         <option
-          value="White"
+          value=""
         >
           Select Color
         </option>
@@ -93,5 +95,112 @@ exports[`GemsPage should match the snapshot with all data passed in correctly 1`
   <div
     className="gem-results"
   />
+</div>
+`;
+
+exports[`GemsPage should match the snapshot with gem color containing red 1`] = `
+<div
+  style={Object {}}
+>
+  <div
+    className="container"
+  >
+    <Header />
+    <input
+      id="input-value"
+      onChange={[Function]}
+      placeholder="Search Gem by Name"
+      type="text"
+      value=""
+    />
+    <button
+      className="search-button"
+      onClick={[Function]}
+    >
+      Find Gems!
+    </button>
+    <p>
+      <span>
+        Search Gem by Color
+      </span>
+      <select
+        id="filter-colors"
+        onChange={[Function]}
+      >
+        <option
+          value=""
+        >
+          Select Color
+        </option>
+        <option
+          value="White"
+        >
+          White
+        </option>
+        <option
+          value="Red"
+        >
+          Red
+        </option>
+        <option
+          value="Orange"
+        >
+          Orange
+        </option>
+        <option
+          value="Yellow"
+        >
+          Yellow
+        </option>
+        <option
+          value="Green"
+        >
+          Green
+        </option>
+        <option
+          value="Blue"
+        >
+          Blue
+        </option>
+        <option
+          value="Purple"
+        >
+          Purple
+        </option>
+        <option
+          value="Pink"
+        >
+          Pink
+        </option>
+        <option
+          value="Brown"
+        >
+          Brown
+        </option>
+        <option
+          value="Grey"
+        >
+          Grey
+        </option>
+        <option
+          value="Black"
+        >
+          Black
+        </option>
+      </select>
+    </p>
+  </div>
+  <div
+    className="gem-results"
+  >
+    <GemCard
+      gemFam="Beryl"
+      gemId={2}
+      gemImg="https://i.imgur.com/mupSKCl.jpg"
+      gemName="Bixbite"
+      key="2"
+      selectGem={[MockFunction]}
+    />
+  </div>
 </div>
 `;
