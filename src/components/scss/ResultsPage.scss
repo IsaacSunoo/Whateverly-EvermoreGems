@@ -1,0 +1,31 @@
+.results-container {
+  background-color: rgba(211, 211, 211, 0.7);
+  padding: 20px;
+  display: grid;
+  grid-template-areas:  "img header"
+                        "img gem"
+                        "metal ...";
+
+}
+
+.results-img {
+  border-radius: 15px;
+  border: solid white 5px;
+  grid-area: img;
+  height: 280px;
+  width: 500px;
+}
+
+.results-header {
+  grid-area: header;
+}
+
+.gem-results {
+  grid-area: gem;
+}
+
+.metal-results {
+  grid-area: metal;
+  display: flex;
+  justify-content: left;
+}

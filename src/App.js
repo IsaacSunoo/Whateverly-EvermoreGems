@@ -80,7 +80,7 @@ class App extends Component {
         }
         {
           this.state.display === 'results' &&
-          <ResultsPage />
+          <ResultsPage selectedGem={this.state.selectedGem} selectedMetal={this.state.selectedMetal} />
         }
       
       </div>
@@ -88,7 +88,5 @@ class App extends Component {
   }
 }
 
-
-//line 44 after the div is a jsx if statement with an implicit return
 
 export default App;
