@@ -4,7 +4,7 @@
   display: inline-block;
   width: 200px;
   height: 150px;
-  background: rgba($color: #D4FFFF, $alpha: .7);
+  background: $aqua;
   border: 2px solid gainsboro;
   border-radius: 15px;
   margin: 5px;
@@ -56,19 +56,20 @@
 }
 
 .metal-submit {
-  background-color: #FFF;
-  position: absolute;
-  bottom: 15px;
-  left: 64px;
-  width: 40%;
-  height: 20%;
-  border-radius: 15px;
+ background-color: #FFF;
+ position: absolute;
+ bottom: 15px;
+ left: 64px;
+ width: 40%;
+ height: 20%;
+ border-radius: 15px;
+}
+.metal-submit:hover {
+  background-color: $lavender;
 }
 .metal-submit:hover{
     background-color: #C59DF9;
-
 }
-
 
 img{
   width: 100px;
