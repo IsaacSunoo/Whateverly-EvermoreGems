@@ -9,7 +9,6 @@
   border-radius: 15px;
   margin: 5px;
   transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
@@ -17,7 +16,10 @@
     transition-property: transform;
 
     h5 {
-      padding-bottom: 8px
+      padding-top: 5px;
+      font-family: 'Amatic SC', cursive;
+      font-size: 25px;
+
     }
 }
 
@@ -43,6 +45,8 @@
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
   opacity: 1;
+  box-shadow: 10px 10px 5px grey;
+
 }
 
 .metal-card:hover:before {
@@ -62,6 +66,9 @@
 }
 .metal-submit:hover {
   background-color: $lavender;
+}
+.metal-submit:hover{
+    background-color: #C59DF9;
 }
 
 img{

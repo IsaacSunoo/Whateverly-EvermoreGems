@@ -8,14 +8,14 @@ function MetalCard(props) {
             {props.metalName}
         </h5>
         <h6>
-            <strong>Colors</strong>
+            <strong>Colors Available:</strong>
             {props.metalColors.map(metal => {
                 return (
                     <div>{metal}</div>
                 )
             })}
         </h6>
-        <button className='metal-submit' onClick={() => props.selectMetal(props.metalId)}>select</button>
+        <button className='metal-submit' onClick={() => props.selectMetal(props.metalId)}>Select</button>
     </div>
   )
 }

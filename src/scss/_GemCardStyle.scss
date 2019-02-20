@@ -40,6 +40,7 @@
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
   opacity: 1;
+  box-shadow: 10px 10px 5px grey;
 }
 
 .gem-cards:hover:before {
@@ -57,6 +58,7 @@
 }
 
 .select-btn {
+  background-color: #FFF;
   border-radius: 15px;
   font-size: 16px;
   grid-area: btn;
