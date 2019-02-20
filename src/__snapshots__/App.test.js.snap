@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App initial state should match the snapshot with initial state 1`] = `
+<div>
+  <GemsPage
+    gems={Array []}
+    selectGem={[Function]}
+  />
+</div>
+`;
+
+exports[`App should match the snapshot with metals page state 1`] = `
+<div>
+  <MetalsPage
+    metals={
+      Array [
+        Object {
+          "id": 1,
+          "name": "Gold",
+        },
+        Object {
+          "id": 2,
+          "name": "Silver",
+        },
+      ]
+    }
+    selectMetal={[Function]}
+  />
+</div>
+`;
+
+exports[`App should match the snapshot with metals page state 2`] = `
+<div>
+  <ResultsPage
+    selectedGem={Object {}}
+    selectedMetal={Object {}}
+  />
+</div>
+`;
+
+exports[`App should match the snapshot with mock state 1`] = `
+<div>
+  <GemsPage
+    gems={
+      Array [
+        Object {
+          "id": 1,
+          "name": "Aquamarine",
+        },
+        Object {
+          "id": 2,
+          "name": "Bixbite",
+        },
+      ]
+    }
+    selectGem={[Function]}
+  />
+</div>
+`;
