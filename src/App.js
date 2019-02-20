@@ -3,7 +3,7 @@ import GemsPage from './components/GemsPage';
 import MetalsPage from './components/MetalsPage';
 import ResultsPage from './components/ResultsPage';
 
-class App extends Component {
+export class App extends Component {
   constructor() {
     super();
     this.state = {
@@ -13,7 +13,6 @@ class App extends Component {
       selectedMetal: {},
       display: 'gems'
     }
-
   }
 
   componentDidMount() {
