@@ -1,5 +1,6 @@
     h2 {
         font-family: $appfont;
+        letter-spacing: 2px;
         font-size: 1.8em;
         padding: 13px 130px 12px;
     }
@@ -7,7 +8,7 @@
     p {
         font-size: 1.2em;
         padding: 0 182px 3px;
-        font-family: $appfont;
+        font-family: $paragraphfont;
         letter-spacing: 2px;
         font-weight: bolder;
     }

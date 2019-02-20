@@ -1,10 +1,11 @@
 .results-container {
   background-color: rgba(211, 211, 211, 0.7);
-  padding: 45px 100px;
+  padding: 20px 100px;
   display: grid;
-  grid-template-areas:  "img header"
-                        "img gem"
-                        "metal ...";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:  "header header header header"
+                        "img gem gem gem"
+                        "metal metal metal metal";
 }
 
 .results-img {
@@ -17,16 +18,21 @@
 
 .results-header {
   grid-area: header;
+  text-align: center;
   font-family: $appfont;
   font-size: 2em;
+  padding-bottom: 30px;
 }
 
 .gem-results {
   grid-area: gem;
+
+  // ul {
+  //   font-family: $paragraphfont;
+  //   color: green;
+  // }
 }
 
 .metal-results {
   grid-area: metal;
-  display: flex;
-  justify-content: left;
 }
