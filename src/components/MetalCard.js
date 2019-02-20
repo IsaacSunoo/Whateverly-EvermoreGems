@@ -8,7 +8,7 @@ function MetalCard(props) {
             {props.metalName}
         </h5>
         <h6>
-            <strong>Colors</strong>
+            <strong>Colors Available:</strong>
             {props.metalColors.map(metal => {
                 return (
                     <div>{metal}</div>
