@@ -8,10 +8,12 @@ function ResultsPage(props) {
     <div>
       <Header />
       <section className='results-container'>
-        <h1 className='results-header'>Results of your selections</h1>
-        <img className='results-img' src= {gem.image}/>
+         <h1 className='results-header'>Results of your selections</h1>
+        <article className="results-img-area">
+          <img className='results-img' src= {gem.image}/>
+        </article>
         <article className='gem-results'>
-          <h2>You selected {`${gem.name}`}</h2>
+          <h2>You selected: {`${gem.name}`}</h2>
           <ul>
             <li>It is in the {`${gem.family}`} family</li>
             <li>It has a hardness scale rating of {`${gem.hardness}`}</li>
@@ -26,14 +28,13 @@ function ResultsPage(props) {
           chip, scratch or need replacing. </p>
         </article>
         <article className='metal-results'>
-          <div>
-            <h2>You selected {`${metal.name}`}</h2>
+            <h2 id="metal-h2">You selected: {`${metal.name}`}</h2>
               <ul>
                 <li>Is it resizeable? {`${metal.resizeable}`}</li>
                 <li>Is it durable? {`${metal.durable}`}</li>
                 <li>It comes in {`${metal.color}`}</li>
               </ul>
-          </div>
+          
           <p>There are a variety of metals you can get rings in these day.
             The most common for fine jewelry is platinum, gold and silver.
             Platinum is the most expensive and resilient. Platinum has two siblings
