@@ -1,16 +1,15 @@
 .results-container {
   background-color: rgba(211, 211, 211, 0.7);
-  padding: 20px;
+  padding: 45px 100px;
   display: grid;
   grid-template-areas:  "img header"
                         "img gem"
                         "metal ...";
-
 }
 
 .results-img {
   border-radius: 15px;
-  border: solid white 5px;
+  border: solid white 3px;
   grid-area: img;
   height: 280px;
   width: 500px;
@@ -18,6 +17,8 @@
 
 .results-header {
   grid-area: header;
+  font-family: $appfont;
+  font-size: 2em;
 }
 
 .gem-results {

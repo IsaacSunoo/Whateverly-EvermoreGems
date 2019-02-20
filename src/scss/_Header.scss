@@ -1,28 +1,12 @@
 .header-container {
-
-    h1 {
-        background-color: black;
-        color: #FFF;
+    .header-title {
+        background-color: #FFF;
+        color: black;
         font-family: 'Amatic SC', cursive;
+        font-size: 2em;
         letter-spacing: 2px;
         padding: 12px 0;
-        // font-family: 'Questrial', sans-serif;
-        // font-family: 'Bungee Shade', cursive;
-        // font-family: 'Sacramento', cursive;
-        // font-size: 1.8em;
-        // font-weight: bolder;
-        // font-family: 'Monofett', cursive;
-        // letter-spacing: 2px;
-        // font-weight: bolder;
-    }
+        text-align: center;
 
-    h2 {
-        padding: 13px 130px 12px;
     }
-
-    p {
-        font-size: 1em;
-        padding: 0 182px 3px;
-    }
-
 }

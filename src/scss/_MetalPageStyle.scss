@@ -1,15 +1,16 @@
 .metal-main {
 
     h1 {
-        color: #742ECD;
+        font-family: $appfont;
         padding-top: 35px;
         text-align: center;
     }
 }
 
 .metal-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    justify-items: center;
     flex-wrap: wrap;
-    padding-top: 100px;
+    padding-top: 40px;
 }

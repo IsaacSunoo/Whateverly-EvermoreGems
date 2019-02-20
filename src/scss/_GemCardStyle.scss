@@ -2,15 +2,15 @@
   box-sizing: border-box;
 }
 .gem-cards {
-  background: rgba($color: lightgrey, $alpha: .7);
+  background: rgba($color: #D4FFFF, $alpha: .7);
   border-radius: 15px;
   border: 2px solid gainsboro;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
                       "img info"
                       "img btn";
-  height: 320px;
+  height: 300px;
   margin: 5px;
   padding: 20px;
   text-align: center;
@@ -19,12 +19,10 @@
   transition-property: transform;
   -webkit-transition-duration: 0.3s;
   -webkit-transition-property: transform;
-  width: 1000px;
+  width: 800px;
 }
 
- 
-
-.gem-cards:before { 
+.gem-cards:before {
   background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
   opacity: 0;
   pointer-events: none;
@@ -51,8 +49,8 @@
 
 .gem-pic {
   grid-area: img;
-  height: 280px;
-  width: 500px;
+  height: 240px;
+  width: 450px;
   border: solid white 5px;
   border-radius: 15px;
 }

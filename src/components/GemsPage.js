@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import GemCard from './GemCard';
 import Header from './Header';
+import Greeting from './Greeting';
 
 class GemsPage extends Component {
     constructor() {
@@ -49,6 +50,7 @@ class GemsPage extends Component {
       <div style={GemPageDisplay}>
         <div className="container">
           <Header />
+          <Greeting />
           <input
             id='input-value'
             value={this.state.searchInput}
@@ -58,7 +60,7 @@ class GemsPage extends Component {
           />
           <button onClick={this.gemsByName} className='search-button'>Find Gems!</button>
           <p>
-            <span>Search Gem by Color</span>
+            <span className='search-text'>Search Gem by Color</span>
             <select onChange={this.selectColor} id='filter-colors'>
               <option value="">Select Color</option>
               <option value="White">White</option>
