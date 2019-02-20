@@ -6,7 +6,8 @@
 
 body {
   background-image: url('./images/sky.jpg');
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -42,19 +43,24 @@ body {
   }
 }
 
-.gem-results,
-.metal-results {
+.gem-results {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .search-button {
-	@include submit-buttons($lavender)
+  @include submit-buttons($lavender);
 }
 
 .search-button:hover {
 background-color: #A572F3;
+}
+
+.container {
+  .color-dropdown {
+    margin-top: 15px;
+  }
 }
 
 

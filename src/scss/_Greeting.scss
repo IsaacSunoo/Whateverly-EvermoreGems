@@ -8,7 +8,9 @@
     p {
         font-size: 1.2em;
         padding: 0 182px 3px;
-        font-family: $paragraphfont;
         letter-spacing: 2px;
-        font-weight: bolder;
+    }
+
+    .greeting-para {
+        margin-bottom: 15px;
     }

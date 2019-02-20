@@ -59,7 +59,7 @@ class GemsPage extends Component {
             placeholder="Search Gem by Name"
           />
           <button onClick={this.gemsByName} className='search-button'>Find Gems!</button>
-          <p>
+          <p className='color-dropdown'>
             <span className='search-text'>Search Gem by Color</span>
             <select onChange={this.selectColor} id='filter-colors'>
               <option value="">Select Color</option>

@@ -20,7 +20,7 @@ const mockMetal = [{
   {
     "name": "Silver",
     "id": 2,
-  }  
+  }
 ]
   const mockInitalState = {
       gems: [],
@@ -28,7 +28,7 @@ const mockMetal = [{
       selectedGem: {},
       selectedMetal: {},
       display: 'gems'
-  n}
+  }
 
 describe('App initial state', () => {
   let wrapper;

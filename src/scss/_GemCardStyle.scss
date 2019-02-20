@@ -1,10 +1,8 @@
-* {
-  box-sizing: border-box;
-}
 .gem-cards {
-  background: rgba($color: #D4FFFF, $alpha: .7);
+  background: $aqua;
   border-radius: 15px;
   border: 2px solid gainsboro;
+  box-sizing: content-box;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   display: grid;
   grid-template-areas:
@@ -24,6 +22,8 @@
 
 .gem-cards:before {
   background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  content: '';
   opacity: 0;
   pointer-events: none;
   position: absolute;
@@ -39,6 +39,7 @@
 .gem-cards:hover{
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
+  opacity: 1;
 }
 
 .gem-cards:hover:before {
@@ -67,6 +68,7 @@
 }
 
 .gem-name {
+  font-family: $appfont;
   font-size: 40px;
 }
 

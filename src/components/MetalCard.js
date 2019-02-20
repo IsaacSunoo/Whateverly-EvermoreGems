@@ -8,8 +8,8 @@ function MetalCard(props) {
             {props.metalName}
         </h5>
         <h6>
-            Metal Composition
-            {props.metalMakeup.map(metal => {
+            <strong>Colors</strong>
+            {props.metalColors.map(metal => {
                 return (
                     <div>{metal}</div>
                 )

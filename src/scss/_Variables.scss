@@ -1,6 +1,6 @@
 $lavender: #752CC2;
+$aqua: rgba(212, 255, 255, .7%);
 $appfont: 'Amatic SC', cursive;
-$paragraphfont: 'Inconsolata', monospace;
 
 @mixin submit-buttons($btnColor) {
     -moz-box-shadow: 0px 10px 14px -7px $btnColor;

@@ -1,5 +1,4 @@
 .metal-main {
-
     h1 {
         font-family: $appfont;
         padding-top: 35px;
@@ -13,4 +12,10 @@
     justify-items: center;
     flex-wrap: wrap;
     padding-top: 40px;
+}
+
+.metal-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

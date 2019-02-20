@@ -4,7 +4,7 @@
   display: inline-block;
   width: 200px;
   height: 150px;
-  background: rgba($color: lightgrey, $alpha: .7);
+  background: rgba($color: #D4FFFF, $alpha: .7);
   border: 2px solid gainsboro;
   border-radius: 15px;
   margin: 5px;
@@ -16,6 +16,9 @@
     -webkit-transition-property: transform;
     transition-property: transform;
 
+    h5 {
+      padding-bottom: 8px
+    }
 }
 
 .metal-card:before {

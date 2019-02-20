@@ -29,15 +29,6 @@ exports[`App should match the snapshot with metals page state 1`] = `
 </div>
 `;
 
-exports[`App should match the snapshot with metals page state 2`] = `
-<div>
-  <ResultsPage
-    selectedGem={Object {}}
-    selectedMetal={Object {}}
-  />
-</div>
-`;
-
 exports[`App should match the snapshot with mock state 1`] = `
 <div>
   <GemsPage
@@ -54,6 +45,15 @@ exports[`App should match the snapshot with mock state 1`] = `
       ]
     }
     selectGem={[Function]}
+  />
+</div>
+`;
+
+exports[`App should match the snapshot with results page state 1`] = `
+<div>
+  <ResultsPage
+    selectedGem={Object {}}
+    selectedMetal={Object {}}
   />
 </div>
 `;
