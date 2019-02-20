@@ -15,7 +15,7 @@ function MetalCard(props) {
                 )
             })}
         </h6>
-        <button onClick={() => props.selectMetal(props.metalId)}>select</button>
+        <button className='metal-submit' onClick={() => props.selectMetal(props.metalId)}>select</button>
     </div>
   )
 }

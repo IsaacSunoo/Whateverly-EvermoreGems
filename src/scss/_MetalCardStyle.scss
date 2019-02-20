@@ -48,6 +48,13 @@
   transform: translateY(5px);
 }
 
+.metal-submit {
+  @include submit-buttons($lavender);
+  position: absolute;
+  bottom: 15px;
+  left: 64px;
+}
+
 img{
   width: 100px;
   height: 75px;

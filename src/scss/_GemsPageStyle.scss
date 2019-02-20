@@ -1,5 +1,3 @@
-$lavender: #C59DF9;
-
 *{
   box-sizing: border-box;
   margin-left: auto;
@@ -22,8 +20,21 @@ body {
     outline: none;
   }
 
+    .search-text {
+      font-family: $appfont;
+      font-size: 1.1em;
+    }
+
+  ::-webkit-input-placeholder {
+   text-align: center;
+}
+
   select {
     margin-bottom: 15px;
+  }
+
+  button {
+    cursor: pointer;
   }
 
   span {
@@ -39,23 +50,7 @@ body {
 }
 
 .search-button {
-	-moz-box-shadow: 0px 10px 14px -7px $lavender;
-	-webkit-box-shadow: 0px 10px 14px -7px $lavender;
-	box-shadow: 0px 10px 14px -7px $lavender;
-	background-color: $lavender;
-	-moz-border-radius:8px;
-	-webkit-border-radius:8px;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color: #fff;
-	font-family:Arial;
-	font-size:10px;
-	font-weight:bold;
-	padding:6px 20px;
-	text-decoration:none;
-  text-shadow:0px 1px 0px #3d768a;
-  outline: none;
+	@include submit-buttons($lavender)
 }
 
 .search-button:hover {
