@@ -53,11 +53,19 @@
 }
 
 .metal-submit {
-  @include submit-buttons($lavender);
+  background-color: #FFF;
   position: absolute;
   bottom: 15px;
   left: 64px;
+  width: 40%;
+  height: 20%;
+  border-radius: 15px;
 }
+.metal-submit:hover{
+    background-color: #C59DF9;
+
+}
+
 
 img{
   width: 100px;
