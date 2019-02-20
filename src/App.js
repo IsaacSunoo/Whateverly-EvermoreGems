@@ -10,8 +10,7 @@ class App extends Component {
       gems: [],
       metals: [],
       selectedGem: {},
-      selectedMetal: {},
-      display: 'gems'
+       
     }
 
   }

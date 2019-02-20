@@ -17,7 +17,7 @@ const mockGem = [{
   "family": "Beryl",
   "hardness": [7.5, 8],
   "image": "https://i.imgur.com/mupSKCl.jpg"
-},
+  },
   {
     "name": "Bixbite",
     "id": 2,
