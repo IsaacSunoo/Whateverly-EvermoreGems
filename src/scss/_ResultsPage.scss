@@ -1,11 +1,12 @@
 .results-container {
+  text-align: left;
   background-color: rgba(211, 211, 211, 0.7);
-  padding: 20px 100px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:  "header header header header"
-                        "img gem gem gem"
-                        "metal metal metal metal";
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:  "header header"
+                        "img gem"
+                        "metal metal";
 }
 
 .results-img {
@@ -14,6 +15,7 @@
   grid-area: img;
   height: 280px;
   width: 500px;
+  margin-left: 20px;
 }
 
 .results-header {
@@ -26,13 +28,40 @@
 
 .gem-results {
   grid-area: gem;
-
-  // ul {
-  //   font-family: $paragraphfont;
-  //   color: green;
-  // }
+  font-size: 15px;
+  padding-left: 20px;
 }
 
 .metal-results {
   grid-area: metal;
+  padding-left: 20px;
+  margin-top: 20px;
+
+
+}
+
+.results-img-area{
+  grid-area: img;
+}
+
+.gem-results p{
+  padding: 20px;
+}
+
+.metal-results p{
+  padding: 20px;
+  margin-left: 0px;
+}
+
+h2{
+  text-decoration: underline;
+  text-align: left;
+  display: block;
+  padding-left: 0px;
+}
+
+ul{
+  text-align: left;
+  padding-left: 20px;
+  width: 100%;
 }

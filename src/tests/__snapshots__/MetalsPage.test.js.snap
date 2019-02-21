@@ -4,6 +4,7 @@ exports[`MetalsPage should match the snapshot with all data passed in 1`] = `
 <div
   className="metal-main"
 >
+  <Header />
   <h1>
     Select a Metal to compliment your gem!
   </h1>

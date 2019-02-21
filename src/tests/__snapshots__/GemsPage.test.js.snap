@@ -8,6 +8,7 @@ exports[`GemsPage should match the snapshot with all data passed in correctly 1`
     className="container"
   >
     <Header />
+    <Greeting />
     <input
       id="input-value"
       onChange={[Function]}
@@ -21,8 +22,12 @@ exports[`GemsPage should match the snapshot with all data passed in correctly 1`
     >
       Find Gems!
     </button>
-    <p>
-      <span>
+    <p
+      className="color-dropdown"
+    >
+      <span
+        className="search-text"
+      >
         Search Gem by Color
       </span>
       <select
@@ -106,6 +111,7 @@ exports[`GemsPage should match the snapshot with gem color containing red 1`] = 
     className="container"
   >
     <Header />
+    <Greeting />
     <input
       id="input-value"
       onChange={[Function]}
@@ -119,8 +125,12 @@ exports[`GemsPage should match the snapshot with gem color containing red 1`] = 
     >
       Find Gems!
     </button>
-    <p>
-      <span>
+    <p
+      className="color-dropdown"
+    >
+      <span
+        className="search-text"
+      >
         Search Gem by Color
       </span>
       <select
