@@ -1,13 +1,9 @@
-*{
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
+.search-button {
+  @include submit-buttons($lavender);
 }
 
-body {
-  background-image: url('./images/sky.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
+.search-button:hover {
+background-color: #A572F3;
 }
 
 .container {
@@ -23,7 +19,7 @@ body {
 
     .search-text {
       font-family: $appfont;
-      font-size: 1.1em;
+      font-size: 30px;
     }
 
   ::-webkit-input-placeholder {
@@ -31,11 +27,13 @@ body {
 }
 
   select {
+    font-size: 16px;
     margin-bottom: 15px;
   }
 
   button {
     cursor: pointer;
+    font-size: 15px;
   }
 
   span {
@@ -43,24 +41,12 @@ body {
   }
 }
 
+.color-dropdown {
+  margin-top: 15px;
+}
+
 .gem-results {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.search-button {
-  @include submit-buttons($lavender);
-}
-
-.search-button:hover {
-background-color: #A572F3;
-}
-
-.container {
-  .color-dropdown {
-    margin-top: 15px;
-  }
-}
-
-

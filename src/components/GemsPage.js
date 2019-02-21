@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import GemCard from './GemCard';
-import Header from './Header';
-import Greeting from './Greeting';
+import React, { Component } from "react";
+import GemCard from "./GemCard";
+import Header from "./Header";
+import Greeting from "./Greeting";
 
 class GemsPage extends Component {
     constructor() {
@@ -13,7 +13,7 @@ class GemsPage extends Component {
         };
     }
 
-  updateInputValue = e => {
+  updateInputValue = (e) => {
     let searchInput = e.target.value;
     this.setState({
       searchInput: searchInput.toLowerCase()
@@ -41,9 +41,15 @@ class GemsPage extends Component {
 
 
   render() {
-    const GemPageDisplay = this.state.GemPage ? { display: 'none' } : {};
+    const GemPageDisplay = this.state.GemPage ? { display: "none" } : {};
     const gemCards = this.state.searchedGems.map(gem => {
-      return <GemCard selectGem={this.props.selectGem} key={gem.id} gemId={gem.id} gemName={gem.name} gemFam={gem.family} gemImg={gem.image} />
+      return <GemCard 
+                selectGem={this.props.selectGem} 
+                key={gem.id} 
+                gemId={gem.id} 
+                gemName={gem.name} 
+                gemFam={gem.family} 
+                gemImg={gem.image} />
     })
 
     return (
@@ -52,16 +58,18 @@ class GemsPage extends Component {
           <Header />
           <Greeting />
           <input
-            id='input-value'
+            id="input-value"
             value={this.state.searchInput}
             onChange={this.updateInputValue}
             type="text"
             placeholder="Search Gem by Name"
           />
-          <button onClick={this.gemsByName} className='search-button'>Find Gems!</button>
+          <button onClick={this.gemsByName} 
+                  className='search-button'>Find Gems!</button>
           <p className='color-dropdown'>
             <span className='search-text'>Search Gem by Color</span>
-            <select onChange={this.selectColor} id='filter-colors'>
+            <select onChange={this.selectColor} 
+                    id='filter-colors'>
               <option value="">Select Color</option>
               <option value="White">White</option>
               <option value="Red">Red</option>

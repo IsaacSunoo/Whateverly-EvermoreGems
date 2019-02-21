@@ -1,16 +1,15 @@
+  .Greeting { 
     h2 {
         font-family: $appfont;
-        letter-spacing: 2px;
         font-size: 1.8em;
+        letter-spacing: 2px;
         padding: 13px 130px 12px;
     }
 
     p {
         font-size: 1.2em;
-        padding: 0 182px 3px;
         letter-spacing: 2px;
-    }
-
-    .greeting-para {
         margin-bottom: 15px;
+        padding: 0 182px 3px;
     }
+  }

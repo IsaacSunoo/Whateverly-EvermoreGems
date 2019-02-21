@@ -37,10 +37,10 @@
 }
 
 .gem-cards:hover{
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-  opacity: 1;
   box-shadow: 10px 10px 5px grey;
+  opacity: 1;
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
 }
 
 .gem-cards:hover:before {
@@ -50,23 +50,15 @@
 }
 
 .gem-pic {
+  border-radius: 15px;
+  border: solid white 5px;
   grid-area: img;
   height: 240px;
   width: 450px;
-  border: solid white 5px;
-  border-radius: 15px;
 }
 
-.select-btn {
-  background-color: #FFF;
-  border-radius: 15px;
-  font-size: 16px;
-  grid-area: btn;
-  height: 35%;
-  width: 100%;
-}
-.select-btn:hover {
-  background-color: $lavender;
+.gem-info {
+  grid-area: info;
 }
 
 .gem-name {
@@ -78,8 +70,15 @@
   font-size: 25px;
 }
 
-.gem-info {
-  grid-area: info;
+.select-btn {
+  background-color: #FFF;
+  border-radius: 15px;
+  font-size: 16px;
+  grid-area: btn;
+  height: 35%;
+  width: 100%;
 }
 
-
+.select-btn:hover {
+  background-color: $lavender;
+}

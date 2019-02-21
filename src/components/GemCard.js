@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function GemCard(props) {
     return(
@@ -12,11 +12,10 @@ function GemCard(props) {
             {props.gemFam}
           </h6>
         </article>
-        <button onClick={() => props.selectGem(props.gemId)} className="select-btn">Select</button>
+        <button onClick={() => props.selectGem(props.gemId)} 
+                className="select-btn">Select</button>
       </div>
     )
 }
 
 export default GemCard;
-
-// we add an anon func to button so it dosn't run on button creation //

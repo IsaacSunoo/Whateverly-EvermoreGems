@@ -8,9 +8,8 @@
 
 .metal-container {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    justify-items: center;
     flex-wrap: wrap;
+    grid-template-columns: repeat(4, 25%);
     padding-top: 40px;
 }
 

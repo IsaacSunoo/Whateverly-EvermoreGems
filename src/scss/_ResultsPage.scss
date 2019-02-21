@@ -1,11 +1,23 @@
 .results-container {
   background-color: rgba(211, 211, 211, 0.7);
-  padding: 20px 100px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:  "header header header header"
-                        "img gem gem gem"
-                        "metal metal metal metal";
+  grid-gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:  "header header "
+                        "img gem"
+                        "metal metal";
+  padding: 20px 100px;
+  h2 {
+    font-family: $appfont;
+  }
+}
+
+.results-header {
+  font-family: $appfont;
+  font-size: 2em;
+  grid-area: header;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 .results-img {
@@ -16,23 +28,20 @@
   width: 500px;
 }
 
-.results-header {
-  grid-area: header;
-  text-align: center;
-  font-family: $appfont;
-  font-size: 2em;
-  padding-bottom: 30px;
-}
-
-.gem-results {
+.gem-results, {
   grid-area: gem;
-
-  // ul {
-  //   font-family: $paragraphfont;
-  //   color: green;
-  // }
+    h2, ul {
+      padding-left: 20px;
+      text-align: left;
+      width: 100%;
+    }
 }
 
 .metal-results {
   grid-area: metal;
+    h2, ul {
+      padding-left: 20px;
+      text-align: left;
+      width: 100%;
+    }
 }

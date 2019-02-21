@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import GemsPage from './components/GemsPage';
-import MetalsPage from './components/MetalsPage';
-import ResultsPage from './components/ResultsPage';
+import React, { Component } from "react";
+import GemsPage from "./components/GemsPage";
+import MetalsPage from "./components/MetalsPage";
+import ResultsPage from "./components/ResultsPage";
 
 export class App extends Component {
   constructor() {
@@ -11,7 +11,7 @@ export class App extends Component {
       metals: [],
       selectedGem: {},
       selectedMetal: {},
-      display: 'gems'
+      display: "gems"
     }
   }
 
@@ -23,13 +23,13 @@ export class App extends Component {
           gems: gems.gems
         })
       })
-      .catch(err => {
+      .catch((err) => {
         throw new Error(err);
       })
 
       fetch('http://whateverly-datasets.herokuapp.com/api/v1/metals')
-      .then(response => response.json())
-      .then(metals => {
+      .then((response) => response.json())
+      .then((metals) => {
         this.setState({
           metals: metals.metals
         })
@@ -46,7 +46,7 @@ export class App extends Component {
     this.setState({
       selectedGem
     })
-    this.changeDisplayPage('metals')
+    this.changeDisplayPage("metals")
   }
 
   selectMetal = (id) => {
@@ -56,7 +56,7 @@ export class App extends Component {
     this.setState({
       selectedMetal
     })
-    this.changeDisplayPage('results')
+    this.changeDisplayPage("results")
   }
 
   changeDisplayPage = (nextPage) => {
@@ -69,15 +69,15 @@ export class App extends Component {
     return (
       <div>
         {
-          this.state.display === 'gems' &&
+          this.state.display === "gems" &&
           <GemsPage selectGem={this.selectGem} gems={this.state.gems}/>
         }
         {
-          this.state.display === 'metals' &&
+          this.state.display === "metals" &&
           <MetalsPage selectMetal={this.selectMetal} metals={this.state.metals}/>
         }
         {
-          this.state.display === 'results' &&
+          this.state.display === "results" &&
           <ResultsPage selectedGem={this.state.selectedGem} selectedMetal={this.state.selectedMetal} />
         }
 
@@ -85,6 +85,5 @@ export class App extends Component {
     );
   }
 }
-
 
 export default App;

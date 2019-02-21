@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { shallow } from 'enzyme';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import { shallow } from "enzyme";
+import App from "./App";
 
 const mockGem = [{
     "name": "Aquamarine",
@@ -30,19 +30,19 @@ const mockMetal = [{
       display: 'gems'
   }
 
-describe('App initial state', () => {
+describe("App initial state", () => {
   let wrapper;
   wrapper = shallow(<App />);
-   it('should match the snapshot with initial state', () => {
+   it("should match the snapshot with initial state", () => {
     expect(wrapper).toMatchSnapshot();
   });
-   it('should have the correct default state', () => {
+   it("should have the correct default state", () => {
     expect(wrapper.state()).toEqual(mockInitalState)
    })
 })
 
 
-describe('App', () => {
+describe("App", () => {
   let wrapper;
 
   beforeEach(() => {
@@ -51,37 +51,37 @@ describe('App', () => {
                     metals: mockMetal,
                     selectedGem:{},
                     selectedMetal: {},
-                    display: 'gems'})
+                    display: "gems"})
  })
 
-  it('should match the snapshot with mock state', () => {
+  it("should match the snapshot with mock state", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should match the snapshot with metals page state', () => {
-    wrapper.setState({display: 'metals'})
+  it("should match the snapshot with metals page state", () => {
+    wrapper.setState({display: "metals"})
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should match the snapshot with results page state', () => {
-    wrapper.setState({display: 'results'})
+  it("should match the snapshot with results page state", () => {
+    wrapper.setState({display: "results"})
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('renders without crashing', () => {
-    const div = document.createElement('div');
+  it("renders without crashing", () => {
+    const div = document.createElement("div");
     ReactDOM.render(<App />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('should select a gem object for state',() => {
+  it("should select a gem object for state",() => {
     wrapper.instance().selectGem(1)
-    expect(wrapper.state('selectedGem')).toEqual(mockGem[0])
+    expect(wrapper.state("selectedGem")).toEqual(mockGem[0])
   });
 
-  it('should select a metal object for state',() => {
+  it("should select a metal object for state",() => {
     wrapper.instance().selectMetal(1)
-    expect(wrapper.state('selectedMetal')).toEqual(mockMetal[0])
+    expect(wrapper.state("selectedMetal")).toEqual(mockMetal[0])
   });
 
 });

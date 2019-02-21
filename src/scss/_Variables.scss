@@ -3,21 +3,21 @@ $aqua: rgba(4, 216, 227, .7%);
 $appfont: 'Amatic SC', cursive;
 
 @mixin submit-buttons($btnColor) {
-    -moz-box-shadow: 0px 10px 14px -7px $btnColor;
-	-webkit-box-shadow: 0px 10px 14px -7px $btnColor;
-	box-shadow: 0px 10px 14px -7px $btnColor;
-	background-color: $btnColor;
-	-moz-border-radius:8px;
-	-webkit-border-radius:8px;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color: #fff;
-	font-family:Arial;
-	font-size:10px;
-	font-weight:bold;
-	padding:6px 20px;
-	text-decoration:none;
-    text-shadow:0px 1px 0px #3d768a;
-    outline: none;
+  background-color: $btnColor;
+  border-radius:8px;
+  box-shadow: 0px 10px 14px -7px $btnColor;
+  color: #fff;
+  cursor:pointer;
+  display:inline-block;
+  font-family:Arial;
+  font-size:10px;
+  font-weight:bold;
+  -moz-border-radius:8px;
+  -moz-box-shadow: 0px 10px 14px -7px $btnColor;
+  padding:6px 20px;
+  text-decoration:none;
+  outline: none;
+  text-shadow:0px 1px 0px #3d768a;
+  -webkit-border-radius:8px;
+  -webkit-box-shadow: 0px 10px 14px -7px $btnColor;
 }
