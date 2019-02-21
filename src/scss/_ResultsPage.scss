@@ -1,4 +1,5 @@
 .results-container {
+  text-align: left;
   background-color: rgba(211, 211, 211, 0.7);
   display: grid;
   grid-gap: 15px;
@@ -26,6 +27,7 @@
   grid-area: img;
   height: 280px;
   width: 500px;
+  margin-left: 20px;
 }
 
 .gem-results, {
@@ -44,4 +46,32 @@
       text-align: left;
       width: 100%;
     }
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.results-img-area{
+  grid-area: img;
+}
+
+.gem-results p{
+  padding: 20px;
+}
+
+.metal-results p{
+  padding: 20px;
+  margin-left: 0px;
+}
+
+h2{
+  text-decoration: underline;
+  text-align: left;
+  display: block;
+  padding-left: 0px;
+}
+
+ul{
+  text-align: left;
+  padding-left: 20px;
+  width: 100%;
 }

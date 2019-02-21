@@ -24,7 +24,6 @@ function ResultsPage(props) {
           10 the better for the longevity of your
           ring. The softer the stone the more it may
           chip, scratch or need replacing. </p>
-        </article>
         <article className="metal-results">
           <h2>You selected {`${metal.name}`}</h2>
             <ul>
