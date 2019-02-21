@@ -1,4 +1,4 @@
-## Evermore-gems
+## Evermore Gems
 
 We would like to help you create a timeless and unique ring that you could wear forever. Information on precious stones, semi-precious stones and precious metals all in the same place used to be challenging, until now. We want to make sure you have the information you need to make this life time commitment.
 
